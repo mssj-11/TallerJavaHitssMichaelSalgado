@@ -2,7 +2,10 @@ package ciclos;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 /*
- * Ejercicio 3
+ * Ejercicio 3:
+    Pedir 20 notas finales de alumnos en una escala de 1 a 10, manejar decimales en las notas (double). Mostrar el promedio de las notas mayores o iguales a 6, promedio de notas inferiores a 6 y la cantidad de notas iguales a 1, además mostrar el promedio total.
+    Ayuda: usar un bucle for que itere hasta 20 (notas) y dentro del ciclo pedir las notas una a una para realizar los cálculos (contadores, sumas).
+    Opcional: si una de las notas ingresadas es menor que 1.0 o mayor que 10.0 debe salirse del ciclo for y mostrar un mensaje de error finalizando el programa.
 */
 public class NotasPromedio {
     public static void main(String[] args) {
