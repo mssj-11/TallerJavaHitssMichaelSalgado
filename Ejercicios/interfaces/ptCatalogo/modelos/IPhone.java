@@ -4,8 +4,7 @@ import interfaces.ptCatalogo.abstractas.Electronico;
 
 
 public class IPhone extends Electronico {
-    private String modelo;
-    private String color;
+    private String modelo, color;
 
     public IPhone(int precio, String fabricante, String modelo, String color) {
         super(precio, fabricante);
@@ -15,7 +14,7 @@ public class IPhone extends Electronico {
 
     @Override
     public double getPrecioVenta() {
-        return precio * 1.10; // +10%
+        return precio; //return precio * 1.10; // +10%
     }
 
     public String getModelo() { return modelo; }
@@ -23,8 +22,9 @@ public class IPhone extends Electronico {
 
     @Override
     public String toString() {
-        return String.format("iPhone {Modelo=%s, Color=%s, Fabricante=%s, Precio de Venta=%.2f}",
-                modelo, color, fabricante, getPrecioVenta());
+        return String.format("iPhone {Modelo=%s, Color=%s, Fabricante=%s, Precio de Venta=$%.2f}",
+                modelo, color, fabricante, 
+                getPrecioVenta());
     }
 
 }

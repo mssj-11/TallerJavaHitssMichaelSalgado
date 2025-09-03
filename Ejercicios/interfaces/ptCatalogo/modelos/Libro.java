@@ -1,12 +1,16 @@
 package interfaces.ptCatalogo.modelos;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import interfaces.ptCatalogo.abstractas.Producto;
 import interfaces.ptCatalogo.interfaces.ILibro;
 
 
 public class Libro extends Producto implements ILibro {
+
+    private static final DateTimeFormatter FORMATO_FECHA = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
     private LocalDate fechaPublicacion;
     private String autor;
     private String titulo;
@@ -22,7 +26,7 @@ public class Libro extends Producto implements ILibro {
 
     @Override
     public double getPrecioVenta() {
-        return precio * 1.05; // +5%
+        return precio; //return precio * 1.05; // +5%
     }
 
     @Override
@@ -34,10 +38,13 @@ public class Libro extends Producto implements ILibro {
     @Override
     public String getEditorial() { return editorial; }
 
+
     @Override
     public String toString() {
-        return String.format("Libro {Titulo=%s, Autor=%s, Editorial=%s, Precio de Venta=%.2f}",
-                titulo, autor, editorial, getPrecioVenta());
+        return String.format("Libro {Titulo=%s, Autor=%s, Editorial=%s, Fecha de Publicación=%s, Precio de Venta=$%.2f}",
+                titulo, autor, editorial, 
+                fechaPublicacion.format(FORMATO_FECHA), 
+                getPrecioVenta());
     }
 
 }

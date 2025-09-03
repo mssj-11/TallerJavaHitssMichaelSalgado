@@ -12,14 +12,14 @@ public class TvLcd extends Electronico {
 
     @Override
     public double getPrecioVenta() {
-        return precio * 1.15; // +15%
+        return precio; //return precio * 1.15; // +15%
     }
 
     public int getPulgada() { return pulgada; }
 
     @Override
     public String toString() {
-        return String.format("TvLcd {%d pulgadas, Fabricante=%s, Precio de Venta=%.2f}",
+        return String.format("TvLcd {%d pulgadas, Fabricante=%s, Precio de Venta=$%.2f}",
                 pulgada, fabricante, getPrecioVenta());
     }
 }
