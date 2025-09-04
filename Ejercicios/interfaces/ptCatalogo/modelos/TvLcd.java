@@ -12,7 +12,7 @@ public class TvLcd extends Electronico {
 
     @Override
     public double getPrecioVenta() {
-        return precio; //return precio * 1.15; // +15%
+        return precio * 1.15; // +15%
     }
 
     public int getPulgada() { return pulgada; }

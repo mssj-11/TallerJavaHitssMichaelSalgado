@@ -14,7 +14,7 @@ public class IPhone extends Electronico {
 
     @Override
     public double getPrecioVenta() {
-        return precio; //return precio * 1.10; // +10%
+        return precio * 1.10; // +10%
     }
 
     public String getModelo() { return modelo; }

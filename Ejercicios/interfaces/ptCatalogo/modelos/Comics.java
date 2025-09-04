@@ -17,7 +17,7 @@ public class Comics extends Libro {
 
     @Override
     public double getPrecioVenta() {
-        return super.getPrecio(); //return super.getPrecio() * 1.07; // +7%
+        return super.getPrecio() * 1.07; // +7%
     }
 
     public String getPersonaje() { return personaje; }
