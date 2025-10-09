@@ -1,0 +1,12 @@
+=========================================
+REPORTE: Empleados con mas de 5 años exp y salario mayor a 50,000
+FECHA: 08/10/2025 21:38:16
+=========================================
+
+Nombre               | Departamento       | Salario    | Años    
+---------------------------------------------------------------
+Ana Torres           | IT                 | $65000.00  | 6       
+Karla Gómez          | IT                 | $72000.00  | 8       
+Juan Diego Ruiz      | Recursos Humanos   | $51000.00  | 10      
+Carlos López         | IT                 | $56000.00  | 7       
+---------------------------------------------------------------

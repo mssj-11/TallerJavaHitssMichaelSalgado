@@ -1,0 +1,18 @@
+=========================================
+REPORTE: Ranking promedio de puntajes
+FECHA: 08/10/2025 21:42:55
+=========================================
+
+Nombre               | Departamento       | Salario    | Años    
+---------------------------------------------------------------
+Ana Torres           | IT                 | $65000.00  | 6       
+Armando González     | Recursos Humanos   | $48000.00  | 4       
+Karla Gómez          | IT                 | $72000.00  | 8       
+Juan Diego Ruiz      | Recursos Humanos   | $51000.00  | 10      
+Carlos López         | IT                 | $56000.00  | 7       
+---------------------------------------------------------------
+Carlos López: 92.00
+Ana Torres: 93.50
+Karla Gómez: 93.00
+Juan Diego Ruiz: 80.50
+Armando González: 86.00
